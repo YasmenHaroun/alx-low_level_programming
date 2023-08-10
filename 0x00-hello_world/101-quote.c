@@ -7,7 +7,7 @@
 */
 int main(void)
 {
-	chr str[] = "and that piece of art is useful" - Dora Korpar, 2015-10-19"
+	char str[] = "and that piece of art is useful\" - Dora Korpar, 2015-10-19"
 	i = 0;
 	while(i<58)
 	{
