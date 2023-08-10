@@ -9,10 +9,11 @@ int main(void)
 {
 	char str[] = "and that piece of art is useful\" - Dora Korpar, 2015-10-19";
 	int i = 0;
+
 	while(i<58)
 	{
-	putchar( str[i] );
-	i++;
+		putchar(str[i]);
+		i++;
 	}
 	putchar('\n');
 	return (1);
