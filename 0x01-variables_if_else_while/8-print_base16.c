@@ -16,13 +16,12 @@ int main(void)
 		{
 			putchar((i % 10) + '0');
 		}
-		else if ( i < 16)
+		else if (i < 16)
 		{
 			putchar(c);
 			c++;
 		}
 	}
-	
 	putchar('\n');
 	return (0);
 }
