@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 /**
- * main - Prints digits from 0to9
+ * main - Prints hexadecimal numbers
  *
  * Return: Always (Success)
  */
