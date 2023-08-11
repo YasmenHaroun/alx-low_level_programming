@@ -9,19 +9,14 @@ int main(void)
 {
 	int i;
 	char c;
-	while (i < 10)
+	for (i = 0; i < 10; i++)
 	{
 		putchar((i % 10) + '0');
-		i++;
 	}
-	if (i == 10)
+	for (c = 'a'; c <= 'E'; c++)
 	{
-		for (c = 'a'; c <= 'E'; c++)
-		{
-			putchar(c);
-		}
+		putchar(c);
 	}
-
 	putchar('\n');
 	return (0);
 }
