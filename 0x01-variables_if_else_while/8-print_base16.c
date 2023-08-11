@@ -8,16 +8,21 @@
 int main(void)
 {
 	int i;
-	char c;
+	char c = 'a';
 	
-	for (i = 0; i < 10; i++)
+	for (i = 0; i < 16; i++)
 	{
-		putchar((i % 10) + '0');
+		if (i < 10)
+		{
+			putchar((i % 10) + '0');
+		}
+		else if ( i < 16)
+		{
+			putchar(c);
+			c++;
+		}
 	}
-	for (c = 'a'; c < 'E'; c++)
-	{
-		putchar(c);
-	}
+	
 	putchar('\n');
 	return (0);
 }
