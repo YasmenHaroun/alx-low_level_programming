@@ -8,7 +8,7 @@
 int main(void)
 {
         int i;
-        int j = 1;
+	int j = 1;
 	int k = 2;
 
 	for (i = 0; i < 10; i++)
@@ -35,7 +35,7 @@ int main(void)
 			}
 		}
 	}
-	
+
 	putchar ('\n');
 	return (0);
 }
