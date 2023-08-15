@@ -14,11 +14,10 @@ int main(void)
 	{
 		if ((i % 3 == 0) || (i % 5 == 0))
 		{
-			sum += sum;
+			sum += i;
 		}
 	}
-	printf("%d", sum);
-	printf("\n");
+	printf("%d\n", sum);
 
 	return (0);
 }
