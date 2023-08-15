@@ -8,6 +8,7 @@
 int main(void)
 {
 	int count = 1;
+	int sum = 0;
 	
 	printf("1");
 	while (count < 50)
