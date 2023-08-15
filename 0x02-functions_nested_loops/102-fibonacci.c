@@ -6,20 +6,26 @@
  * Return: void
  */
 int main(void)
-{
-	int count = 1;
-	int sum = 1;
-	int previous_sum;
+{	
+	int i = 0;
+	long j = 1, k = 2;
 
-	printf("1, ");
-	while (count < 50)
+	while (i < 50)
 	{
-		previous_sum = sum;
-		sum += pervious_sum;
-		count++;
-		printf("%d, ", sum);
-	}
-	printf("\n");
+		if (i == 0)
+			printf("%ld", j);
+		else if (i == 1)
+			printf(", %ld", k);
+		else
+		{
+			k += j;
+			j = k - j;
+			printf(", %ld", k);
+		}
 
+		++i;
+	}
+
+	printf("\n");
 	return (0);
 }
