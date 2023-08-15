@@ -10,30 +10,33 @@ void print_times_table(int n)
 {
 	int i, j;
 
-	for (i = 0; i <= n; i++)
+	if ((n >= 0) || (n <= 15))
 	{
-		for (j = 0; j <= n; j++)
+		for (i = 0; i <= n; i++)
 		{
-			if (j == 0)
+			for (j = 0; j <= n; j++)
 			{
-				_putchar('0');
+				if (j == 0)
+				{
+					_putchar('0');
+				}
+				else if ((i * j) < 10)
+				{
+					_putchar(' ');
+					_putchar((i * j) + '0');
+				}
+				else
+				{
+					_putchar(((i * j) / 10) + '0');
+					_putchar(((i * j) % 10) + '0');
+				}
+				if (j != n)
+				{
+					_putchar(',');
+					_putchar(' ');
+				}
 			}
-			else if ((i * j) < 10)
-			{
-				_putchar(' ');
-				_putchar((i * j) + '0');
-			}
-			else
-			{
-				_putchar(((i * j) / 10) + '0');
-				_putchar(((i * j) % 10) + '0');
-			}
-			if (j != n)
-			{
-				_putchar(',');
-				_putchar(' ');
-			}
+			_putchar('\n');
 		}
-		_putchar('\n');
 	}
 }
