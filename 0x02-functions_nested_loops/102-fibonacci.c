@@ -9,11 +9,13 @@ int main(void)
 {
 	int count = 1;
 	int sum = 1;
+	int previous_sum;
 
 	printf("1, ");
 	while (count < 50)
 	{
-		sum += sum;
+		previous_sum = sum;
+		sum += pervious_sum;
 		count++;
 		printf("%d, ", sum);
 	}
