@@ -1,4 +1,4 @@
-#include <stdio.h>
+#include "main.h"
 
 /**
  * main -  prints _putchar
@@ -12,7 +12,7 @@ int main(void)
 
 	while (i < 8)
 	{
-		putchar(str[i]);
+		_putchar(str[i]);
 		i++;
 	}
 
