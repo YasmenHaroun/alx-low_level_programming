@@ -10,10 +10,11 @@ int main(void)
 	int count = 1;
 	
 	printf("1");
-	for (count < 50)
+	while (count < 50)
 	{
-		count += count;
-		printf("%d", count);
+		sum += count;
+		count++;
+		printf("%d", sum);
 	}
 	printf("\n");
 
