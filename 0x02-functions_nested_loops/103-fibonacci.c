@@ -11,7 +11,7 @@ int main(void)
 	long sum = 0;
 	long j = 1, k = 2;
 
-	while (i < 4000000)
+	while (k + j < 4000000)
 	{
 		k += j;
 		j = k - j;
