@@ -8,14 +8,14 @@
 int main(void)
 {
 	int count = 1;
-	int sum = 0;
-	
-	printf("1");
+	int sum = 1;
+
+	printf("1, ");
 	while (count < 50)
 	{
-		sum += count;
+		sum += sum;
 		count++;
-		printf("%d", sum);
+		printf("%d, ", sum);
 	}
 	printf("\n");
 
