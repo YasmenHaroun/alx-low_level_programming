@@ -12,7 +12,7 @@ int main(void)
 	long sum = 0;
 
 	printf("1, 2, ");
-	while (i < 96)
+	while (i < 98)
 	{
 		sum = previous + current;
 		previous = current;
