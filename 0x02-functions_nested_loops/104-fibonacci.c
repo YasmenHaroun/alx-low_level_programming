@@ -7,9 +7,9 @@
   */
 int main(void)
 {
-	int i = 0;
-	long previous = 0, current = 1;
-	long sum = 0;
+	unsigned int i = 0;
+	unsigned long previous = 0, current = 1;
+	unsigned long sum = 0;
 
 	while (i < 98)
 	{
