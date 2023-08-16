@@ -8,11 +8,10 @@
 int main(void)
 {
 	int i = 0;
-	long previous = 1, current = 2;
+	long previous = 0, current = 1;
 	long sum = 0;
 
-	printf("1, 2, ");
-	while (i < 96)
+	while (i < 98)
 	{
 		sum = previous + current;
 		previous = current;
