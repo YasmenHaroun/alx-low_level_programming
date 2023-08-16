@@ -12,13 +12,13 @@ int main(void)
 	long sum = 0;
 
 	printf("1, 2, ");
-	while (i < 94)
+	while (i < 96)
 	{
 		sum = previous + current;
 		previous = current;
 		current = sum;
 		printf("%ld, ", sum);
-		++i;
+		i++;
 	}
 
 	printf("\n");
