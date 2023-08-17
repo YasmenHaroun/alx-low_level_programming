@@ -8,23 +8,18 @@
 
 int main(void)
 {
-	long number = 612852475143;
-	int inc;
+	long n = 612852475143;
+	long m = 612852475143;
+	long i = 3;
 
-	while (inc++ < number / 2)
+	while (i < n)
 	{
-		if (number % inc == 0)
+		if (n % i == 0)
 		{
-			number /= 2;
-			continue;
-		}
-
-		for (inc = 3; inc < number / 2; inc += 2)
-		{
-			if (number % inc == 0)
-			number /= inc;
+			n /= i;
+			i += 2;
 		}
 	}
-	printf("%ld\n", number);
+	printf("%ld\n", n);
 	return (0);
 }
