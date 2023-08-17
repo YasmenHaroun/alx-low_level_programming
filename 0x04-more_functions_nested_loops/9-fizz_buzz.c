@@ -1,11 +1,11 @@
 #include "stdio"
 
 /**
- * fizzbuzz - program that prints the numbers till 100
+ * fizz_buzz - program that prints the numbers till 100
  *
  * Return: void
  */
-int fizzbuzz(void)
+int fizz_buzz(void)
 {
 	int i;
 
