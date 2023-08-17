@@ -9,18 +9,19 @@ void print_number(int n)
 {
 	unsigned int num;
 
-	/*check if number is negative*/
 	if (n < 0)
 	{
 		num = -n;
 		_putchar('-');
-	}
-	else
+	} else
+	{
 		num = n;
+	}
 
 	if (num / 10)
 	{
 		print_number(num / 10);
 	}
+
 	_putchar((num % 10) + '0');
 }
