@@ -1,4 +1,4 @@
-#include "stdio"
+#include "stdio.h"
 
 /**
  * fizz_buzz - program that prints the numbers till 100
