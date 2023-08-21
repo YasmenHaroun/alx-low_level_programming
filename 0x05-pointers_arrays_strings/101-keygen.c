@@ -9,12 +9,11 @@
  */
 int main(void)
 {
-	/*int n;*/
+	int n;
 	/*Generate random numer*/
-	/*srand(time(0));*/
-	/*n = rand() - RAND_MAX / 2;*/
-	
-	printf("Tada! Congrats");
-	/*printf("%d", n);*/
+	srand(time(0));
+	n = rand() - RAND_MAX / 2;
+
+	printf("%d", n);
 	return (0);
 }
