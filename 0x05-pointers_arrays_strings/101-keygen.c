@@ -7,7 +7,7 @@
  *
  * Return: void
  */
-char main(void)
+int main(char)
 {
 	int n;
 	/*Generate random numer*/
