@@ -25,7 +25,7 @@ int _atoi(char *s)
 			result = 0;
 		i++;
 	}
-	if (negative == 1)
+	if (negative == 0)
 		result *= -1;
 	return (result);
 }
