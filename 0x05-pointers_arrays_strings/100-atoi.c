@@ -19,16 +19,8 @@ int _atoi(char *s)
 			negative = 1;
 		else if ((s[i] <= '9') && (s[i] >= '0'))
 		{	
-			if (temp != '1')
-			{
-				result += (s[i] + temp);
-				temp *= 10;
-			}
-			else
-			{
-				result = (s[i] + '0');
-				temp = 10;
-			}
+			result *= 10;
+			result -= (s[i] - '0');
 		}
 		else
 			result = 0;
