@@ -25,8 +25,10 @@ int _atoi(char *s)
 				temp *= 10;
 			}
 			else
+			{
 				result = (s[i] + '0');
 				temp = 10;
+			}
 		}
 		else
 			result = 0;
