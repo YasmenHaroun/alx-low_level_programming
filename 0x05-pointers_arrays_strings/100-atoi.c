@@ -22,5 +22,6 @@ int _atoi(char *s)
 			}
 			temp[i] = s[i];
 		}
+		i++;
 	}
 }
