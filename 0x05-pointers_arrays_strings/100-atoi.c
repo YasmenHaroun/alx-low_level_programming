@@ -8,20 +8,34 @@
  */
 int _atoi(char *s)
 {
-	int *temp;
 	int i = 0;
+	int negative = 0;
+	int result = 0;
+	int temp;
 
 	while (s[i] != '\0')
 	{
-		if ((s[i] <= 57) && (s[i] >= 48))
-		{
-			if (i != 0)
+		if (s[i]) = '-') 
+			negative = 1;
+		else
+			negative = 0;
+		temp = 0;
+		else if ((s[i] <= '9') && (s[i] >= '0'))
+		{	
+			if (temp != '1')
 			{
-				if (((s[i - 1]) == 43) || ((s[i - 1]) == 45))
-					temp[i - 1] = s[i - 1];
+				result += (s[i] + temp);
+				temp *= 10;
 			}
-			temp[i] = s[i];
+			else
+				result = (s[i] + '0');
+				temp = 10;
 		}
+		else
+			result = 0;
 		i++;
 	}
+	if (negative = 1)
+		result *= -1;
+	return (result);
 }
