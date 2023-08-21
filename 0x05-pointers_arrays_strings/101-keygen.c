@@ -14,7 +14,7 @@ int main(void)
 	/*srand(time(0));*/
 	/*n = rand() - RAND_MAX / 2;*/
 	
-	printf("Tada! Congrats")
+	printf("Tada! Congrats");
 	/*printf("%d", n);*/
 	return (0);
 }
