@@ -7,7 +7,7 @@
  *
  * Return: void
  */
-int main(void)
+char main(void)
 {
 	int n;
 	/*Generate random numer*/
@@ -15,5 +15,5 @@ int main(void)
 	n = rand() - RAND_MAX / 2;
 
 	printf("%d", n);
-	return (0);
+	return ('0');
 }
