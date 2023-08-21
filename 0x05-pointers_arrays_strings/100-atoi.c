@@ -21,6 +21,8 @@ int _atoi(char *s)
 			result *= 10;
 			result -= (s[i] - '0');
 		}
+		else if (result != 0)
+			break
 		i++;
 	}
 	if (negative == 0)
