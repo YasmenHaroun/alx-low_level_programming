@@ -24,7 +24,7 @@ int _atoi(char *s)
 			flag = 1;
 		}
 		else if (flag == 1)
-			break
+			break;
 
 		i++;
 	}
