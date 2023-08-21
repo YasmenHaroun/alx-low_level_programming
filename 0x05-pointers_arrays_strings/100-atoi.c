@@ -34,7 +34,7 @@ int _atoi(char *s)
 			result = 0;
 		i++;
 	}
-	if (negative = 1)
+	if (negative == 1)
 		result *= -1;
 	return (result);
 }
