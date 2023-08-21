@@ -8,11 +8,19 @@
  */
 int _atoi(char *s)
 {
-	char temp;
-	int i;
+	int *temp;
+	int i = 0;
 
-	for (i = 0; i < strlength(s); i++)
+	while (s[i] != '\0')
 	{
-		if ()
-	}()
+		if ((s[i] <= 57) && (s[i] >= 48))
+		{
+			if (i != 0)
+			{
+				if (((s[i - 1]) == 43) || ((s[i - 1]) == 45)))
+					temp[i - 1] = s[i - 1];
+			}
+			temp[i] = s[i];
+		}
+	}
 }
