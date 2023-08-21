@@ -7,12 +7,12 @@
  *
  * Return: void
  */
-int main(char)
+int main(void)
 {
 	int n;
 	/*Generate random numer*/
 	srand(time(0));
 	n = rand() - RAND_MAX / 2;
 
-	return (n);
+	return (0);
 }
