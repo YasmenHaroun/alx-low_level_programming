@@ -2,15 +2,15 @@
 
 /**
  * leet - encodes a string into 1337
- * @str: input string
+ * @s: input string
  *
  * Return: char
  */
-char *leet(char *str)
+char *leet(char *s)
 {
 	int i;
 
-	for (i = 0; str[i] != '\0'; i++)
+	for (i = 0; s[i] != '\0'; i++)
 	{
 		if (s[i] == 'a' || s[i] == 'A')
 			s[i] = 4;
@@ -24,7 +24,8 @@ char *leet(char *str)
 			s[i] = 1;
 		else
 		{
+			s[i] = s[i];
 		}
 	}
-	return(str);
+	return (s);
 }
