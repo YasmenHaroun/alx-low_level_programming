@@ -25,7 +25,7 @@ char *_strncat(char *dest, char *src, int n)
 		}
 	}
 	if (dest[(i + j)] != '\0')
-		dest[(i + n)] = '\0'
+		dest[(i + n)] = '\0';
 
 	return (dest);
 }
