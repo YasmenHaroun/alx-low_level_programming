@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * _strpbrk - function locates the first occurrence in s of any of bytes in accept
+ * _strpbrk - locates the first occurrence in s of any of bytes in accept
  * @s: search in string
  * @accept: the bytes we search for
  *
@@ -14,7 +14,7 @@ char *_strpbrk(char *s, char *accept)
 	for (i = 0; s[i] != '\0'; i++)
 	{
 		for (j = 0; accept[j] != '\0'; j++)
-			if (accept[j] == s[i])		
+			if (accept[j] == s[i])
 				return (*s + i);
 	}
 	return (NULL);
