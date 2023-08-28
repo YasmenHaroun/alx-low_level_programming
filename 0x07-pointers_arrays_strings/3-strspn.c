@@ -11,12 +11,12 @@ unsigned int _strspn(char *s, char *accept)
 {
 	int count = 0;
 
-	while (*s)
+	while (*s != '\0')
 	{
-		while (*accept)
+		while (*accept != '\0')
 		{
 			if (s == accept)
-				count ++;
+				count++;
 		}
 	}
 	return (count);
