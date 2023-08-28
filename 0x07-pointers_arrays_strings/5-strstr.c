@@ -25,22 +25,24 @@ char *_strstr(char *haystack, char *needle)
 			{
 				if (flag == 0)
 				{
-					*p = *haystack;
+					*p = *haystack;/*first occurance*/
 					flag = 1;
+					break;
 				}
 				else
-					flag = 1;
+				{
+					flag = 1; /*continue sequence*/
+					break;
+				}
 			}
 			else
-			{
-				flag = 0;
+			{	
+				if (flag == 1)
+					return (origin);
 			}
 			haystack++;
 		}
 		needle++;
 	}
-	if (flag == 1)
-		return (p);
-	else
-		return (origin);
+	return (p);
 }
