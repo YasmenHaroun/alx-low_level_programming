@@ -1,8 +1,8 @@
 #include "main.h"
 
 /**
- * set_string - 
- * @s: from 
+ * set_string - set pionter
+ * @s: from
  * @to: to
  *
  * Return: void
