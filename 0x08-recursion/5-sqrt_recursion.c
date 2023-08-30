@@ -15,12 +15,12 @@ int sqrt_2inputs( int num, int n)
         else if (n * n == num)
                 return (n);
 	else
-		return (sqrt_2inputs(num, n-1));
+		return (sqrt_2inputs(num, n + 1));
 }
 int _sqrt_recursion(int n)
 {
 	if (n == 1)
 		return (1);
-	return (sqrt_2inputs(n, n / 2));
+	return (sqrt_2inputs(n, 2));
 }
 
