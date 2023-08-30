@@ -19,6 +19,8 @@ int sqrt_2inputs( int num, int n)
 }
 int _sqrt_recursion(int n)
 {
+	if (n == 1)
+		return (1);
 	return (sqrt_2inputs(n, n / 2));
 }
 
