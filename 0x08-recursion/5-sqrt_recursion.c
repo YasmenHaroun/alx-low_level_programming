@@ -4,7 +4,7 @@
  * sqrt_2inputs - funcation take offset
  * @n: input number
  * @num: input number
- * 
+ *
  * Return: integer
  */
 int sqrt_2inputs(int num, int n)
