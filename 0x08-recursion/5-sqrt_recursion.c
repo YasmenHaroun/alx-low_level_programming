@@ -10,6 +10,8 @@ int sqrt_2inputs( int num, int n)
 {
 	if (n <= 0)
                 return (-1);
+	else if (n == 1)
+		return (1);
         else if (n * n == num)
                 return (n);
 	else
@@ -17,6 +19,6 @@ int sqrt_2inputs( int num, int n)
 }
 int _sqrt_recursion(int n)
 {
-	return (sqrt_2inputs(n, n - 1));
+	return (sqrt_2inputs(n, n / 2));
 }
 
