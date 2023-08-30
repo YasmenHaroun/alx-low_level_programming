@@ -6,13 +6,17 @@
  *
  * Return: integer
  */
-int _sqrt_recursion(int n)
+int sqrt_2inputs( int num, int n)
 {
 	if (n <= 0)
-		return (-1);
-	else if (n * n == n)
-		return (n);
+                return (-1);
+        else if (n * n == num)
+                return (n);
 	else
-		_sqrt_recursion(n - 1);
-	return (0);
+		return (sqrt_2inputs(num, n-1));
 }
+int _sqrt_recursion(int n)
+{
+	return (sqrt_2inputs(n, n - 1));
+}
+
