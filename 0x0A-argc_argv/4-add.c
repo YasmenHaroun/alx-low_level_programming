@@ -16,7 +16,7 @@ int _isdigit(int c)
 }
 
 /**
- * is_ num - check if input is number
+ * is_num - check if input is number
  * @s: input string
  * Return: zero if input is number else 1
  */
@@ -61,5 +61,4 @@ int main(int argc, char *argv[])
 		printf("%d\n", result);
 	}
 	return (0);
-	
 }
